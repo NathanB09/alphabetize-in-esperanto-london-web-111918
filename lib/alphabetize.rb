@@ -5,7 +5,9 @@ def alphabetize(arr)
   esperanto = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
   # arr.sort_by {|phrase| phrase.tr(esperanto, alphabet)}
   sorted = arr.sort_by {|phrase|
-    phrase.split.collect {|char| esperanto.index(char)}
+    phrase.split.collect {|char| esperanto.index(char)
+      binding.pry
+    }
     binding.pry
   }
   binding.pry
