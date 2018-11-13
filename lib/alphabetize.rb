@@ -1,7 +1,7 @@
 require "pry"
 
 def alphabetize(arr)
-  alphabet = "abcdefghijklmnopqrstuvwxyz"
+  alphabet = "lajsbflaksbfiubasekabsadflb"
   esperanto = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
   sorted = arr.sort_by {|phrase| phrase.tr(esperanto, alphabet)
     binding.pry
